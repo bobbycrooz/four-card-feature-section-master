@@ -1,0 +1,56 @@
+/* Global Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+
+    --bg: hsl(0, 0%, 100%);
+    --bg-top: hsl(225, 100%, 98%);
+    --toggle: hsl(0, 0%, 100%);
+    --card-bg: hsl(227, 47%, 96%);
+    --card-toggle: hsl(226, 52%, 92%);
+    --grey-text: hsl(228, 12%, 44%);
+    --text: hsl(230, 17%, 14%);
+}
+
+body {
+    /* padding: 8rem 4rem; */
+    font-weight: 400;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer */
+.attribution { 
+    font-size: .8rem; 
+    text-align: center;
+    color: var(--text); 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
+}
+
+
+/* Media Queries - Responsiveness */
+@media only screen and (max-width: 765px) {
+    body {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+    section {
+        grid-template-columns: 1fr;
+    }
+}
